@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 40" width="280" height="40">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', -apple-system, sans-serif; display: flex; align-items: center; height: 100%;">
+      <style>
+        @keyframes gradientMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .gradient-text {
+          font-size: 22px;
+          font-weight: 800;
+          background: linear-gradient(-220deg, #fc5c7d, #6a82fb, #05dfd7, #fc5c7d);
+          background-size: 300% 300%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: gradientMove 8s ease infinite;
+          display: inline-block;
+          letter-spacing: 0.5px;
+        }
+        .hand {
+          font-size: 24px;
+          margin-right: 8px;
+          display: inline-block;
+          animation: wave 2s ease-in-out infinite;
+          transform-origin: 70% 70%;
+        }
+        @keyframes wave {
+          0% { transform: rotate(0deg); }
+          20% { transform: rotate(14deg); }
+          40% { transform: rotate(-8deg); }
+          60% { transform: rotate(14deg); }
+          80% { transform: rotate(-4deg); }
+          100% { transform: rotate(0deg); }
+        }
+      </style>
+      <div>
+        <span class="hand">👋</span>
+        <span class="gradient-text">Hey, I'm OxStussz!</span>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
